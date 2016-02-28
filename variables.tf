@@ -11,6 +11,7 @@ variable "key_name" {
 }
 
 variable "env" {}
+variable "salt_master" {}
 variable "github_user" {}
 variable "github_password" {}
 variable "user_name" {}

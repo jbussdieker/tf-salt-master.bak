@@ -4,7 +4,7 @@ resource "template_file" "salt-master" {
     hostname             = "salt"
     fqdn                 = "salt.local"
     role                 = "salt-master"
-    salt_master          = "salt"
+    salt_master          = "${var.salt_master}"
     open_mode            = "true"
     env                  = "${var.env}"
     github_user          = "${var.github_user}"

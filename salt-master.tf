@@ -22,4 +22,5 @@ resource "aws_instance" "salt-master" {
   ami           = "${var.ami}"
   instance_type = "${var.instance_type}"
   user_data     = "${template_file.salt-master.rendered}"
+  key_name      = "${var.key_name}"
 }
